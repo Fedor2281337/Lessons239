@@ -26,7 +26,6 @@ public class ThemesController {
     /* curl http://localhost:8080/themes/$INDEX -H 'Content-Type:
    text/plain' */
     @GetMapping("themes/{index}")
-
     public ResponseEntity<String> getThemes(@PathVariable("index") Integer index) {
         try {
             return ResponseEntity.ok(themes.get(index));
