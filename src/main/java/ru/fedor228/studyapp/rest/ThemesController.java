@@ -61,6 +61,7 @@ public class ThemesController {
             return ResponseEntity.notFound().build();
         }
     }
+
     @GetMapping("themes/count")
     /* curl http://localhost:8080/themes/count -H 'Content-Type:
    text/plain' */
